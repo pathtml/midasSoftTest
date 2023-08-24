@@ -36,7 +36,7 @@ function getQuestPart(phases: string[]): string[] {
 
 
 
-    return phases.map(item => item.replace(temp, ''))
+    return phases.map(item => item.replace(temp, '').trim())
 }
 
 console.log(getQuestPart(['BEFRIEND', 'GIRLFRIEND', 'FRIENDSHIP', 'BEST FRIEND']));
